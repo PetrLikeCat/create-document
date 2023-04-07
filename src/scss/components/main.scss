@@ -1,0 +1,38 @@
+
+.main {
+  width: 1211px;
+  height: 479px;
+  background-image: url(..//../img/backround.png);
+  .main-content {
+    padding-left: 106px;
+    &__logo {
+      width: 489px;
+      padding-top: 76px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 49px;
+      color: #222222;
+    }
+    &__text {
+      width: 382px;
+      height: 87px;
+      padding-top: 25px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #222222;
+    }
+    &__btn {
+      width: 282px;
+      height: 49px;
+      background-color: #26ad50;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+      border-radius: 50px;
+      border: 1px solid #26ad50;
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+footer{
+  height:241px;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    list-style-type: none;
+    margin-top: 9px;
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #222222;
+    }
+  }
+}
+
+.footer-connection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  &__cookies {
+    width: 317px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #929090;
+  }
+
+  &__network{
+    img{
+        margin-right: 16px;
+    }
+  }
+}

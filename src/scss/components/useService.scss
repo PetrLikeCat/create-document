@@ -1,0 +1,51 @@
+.useService {
+  display: grid;
+  place-content: start center;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 1030px;
+
+  &__title {
+    margin: 20px auto;
+    width: 620px;
+    height: 39px;
+    font-weight: 600;
+    font-size: 32px;
+    color: $basicTheme;
+  }
+  .useService-card {
+    &__icon {
+    }
+  }
+}
+.useService__content {
+  display: flex;
+  justify-content: center;
+}
+.useService-card {
+  width: 300px;
+  &__title {
+    width: 220px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: $basicTheme;
+    text-align: center;
+    margin: 0;
+    margin-top: 22px;
+  }
+
+  &__icon {
+    margin-left: 47.5px;
+  }
+
+  &__text {
+    width: 234px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #222222;
+    margin-top: 10px;
+  }
+}

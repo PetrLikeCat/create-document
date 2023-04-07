@@ -1,0 +1,16 @@
+@import "./components/all";
+
+* {
+  font-family: "Montserrat";
+}
+.content {
+  width: 1211px;
+}
+.wrapper {
+  display: grid;
+  place-content: center;
+}
+.content {
+  width: 1211px;
+  font-family: "Montserrat";
+}

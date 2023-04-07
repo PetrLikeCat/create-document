@@ -1,0 +1,75 @@
+@import "..//../scss/variables.scss";
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1211px;
+  height: 50px;
+  .header__logo {
+    width: 151px;
+    height: 52px;
+    margin-left: 118px;
+  }
+  .main-menu {
+    display: flex;
+    width: 289px;
+    padding: 0;
+    cursor: pointer;
+    &__item {
+      margin-left: 19px;
+      list-style-type: none;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: #222222;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      cursor: pointer;
+    }
+    :hover {
+      color: $basicTheme;
+      transition: all 0.7s;
+    }
+    &__link a {
+      text-decoration: none;
+    }
+  }
+  .main-menu__item:first-child {
+    margin-left: 0;
+  }
+}
+header .main-menu__link {
+  color: 22222;
+}
+
+.header-contactbar {
+  &__enter {
+    button {
+      width: 131px;
+      height: 33px;
+      border: solid $basicTheme 2px;
+      border-radius: 30px;
+      background-color: #fff;
+      color: $basicTheme;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      cursor: pointer;
+      transition: 0.5s;
+    }:hover{
+      background-color: $basicTheme;
+      color: #fff;
+    }
+  }
+  &__phone {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+    text-decoration: none;
+    margin-left: 36px;
+    transition: 0.5s;
+  }
+}

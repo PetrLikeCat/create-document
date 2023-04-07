@@ -1,0 +1,65 @@
+@import "..//../scss/variables.scss";
+.contract {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+  &-title {
+    width: 1211px;
+    height: 200px;
+    margin-top: 25px;
+    background-color: #eaeaea;
+    border-radius: 10px 50px 10px 50px;
+    &__item {
+      display: flex;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #222222;
+      padding-top: 38px;
+      padding: auto;
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      a {
+        border-radius: 10px;
+        background-color: $white;
+        margin-left: 25px;
+        button {
+          width: 200px;
+          height: 40px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          color: #222222;
+          text-decoration: none;
+
+          border: none;
+          border-radius: 10px;
+          background-color: $white;
+        }
+      }
+      :hover {
+        color: $white;
+        background-color: $basicTheme;
+      }
+    }
+    &__btn {
+    }
+  }
+  &-link{
+
+    margin-top: 24px;
+    &__item {
+        margin-top: 14px;
+        a{
+            text-decoration: none;
+            color:$basicTheme;
+        }
+    }
+
+  }
+}
