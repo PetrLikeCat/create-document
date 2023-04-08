@@ -1,58 +1,23 @@
 import React from 'react'
 import { Question } from './Question'
-
+import { dateQuestion } from "./date.js"
 export const Questions = () => {
-  const date = [
-    {
-      question: "Сколько видов договоров есть на сайте?",
-      answer: "Много но есть ещё больше",
-    },
-    {
-      question: "Сколько видов договоров есть на сайте?",
-      answer: "Много но есть ещё больше",
-    },
-    {
-      question: "Сколько видов договоров есть на сайте?",
-      answer: "Много но есть ещё больше",
-    },
-    {
-      question: "Сколько видов договоров есть на сайте?",
-      answer: "Много но есть ещё больше",
-    },
-    {
-      question: "Сколько видов договоров есть на сайте?",
-      answer: "Много но есть ещё больше",
-    },
-    {
-      question: "Сколько видов договоров есть на сайте?",
-      answer: "Много но есть ещё больше",
-    },
-    {
-      question: "Сколько видов договоров есть на сайте?",
-      answer: "Много но есть ещё больше",
-    },
-    {
-      question: "Сколько видов договоров есть на сайте?",
-      answer: "Много но есть ещё больше",
-    },
-  ]
 
+  const [active, setActive] = React.useState(10)
+  React.useEffect(() => {
 
-  const [activeQuestion, setActiveQuestion] = React.useState(0);
+  }, [])
+  const handlSetActive = (id) => {
+    setActive(id)
+  }
 
-  const dateMap = date.map((item, i) =>
-    <div>{<Question activeQuestion={activeQuestion}  key={i} question={item.question} answer={item.answer} />}</div>
+  const dateMap = dateQuestion.map((item, i) =>
+    <div>{<Question active={active} handlSetActive={handlSetActive} key={i} id={i} question={item.question} answer={item.answer} />}</div>
   )
-  // const handleQuestionClick = (index) => {
-  //   if (index === activeQuestion) {
-  //     setActiveQuestion(null);
-  //   } else {
-  //     setActiveQuestion(index);
-  //   }
-  // }
+
   return (
     <div className="questions">
-      <div className="questions-title">
+      <div className="questions-title" >
         <h2>Вопросы про продукт</h2>
         <h2>Другие вопросы</h2>
       </div>

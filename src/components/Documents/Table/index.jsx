@@ -3,6 +3,7 @@ import Checkbox from '@mui/material/Checkbox';
 import { Item } from "./Item";
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import StarIcon from '@mui/icons-material/Star';
+import { Link } from 'react-router-dom';
 
 
 export const Table = () => {
@@ -16,19 +17,19 @@ export const Table = () => {
         <table className="table">
             <thead>
                 <tr>
-                    <th className="table__title">Адрес</th>
-                    <th className="table__title">Column 2</th>
-                    <th className="table__title">Column 2</th>
-                    <th className="table__title">Column 2</th>
-                    <th className="table__title">Column 2</th>
-                    <th className="table__title">Column 2</th>
-                    <th className="table__title">Column 2</th>
-                    <th className="table__title">Column 2</th>
-                    <th className="table__title"><Checkbox {...label} style={{"appearance":"none"}} /></th>
-                    <th className="table__title"><StarBorderIcon /></th>
+                    <Link to="/CreateDoc" className="table__title"><th>Адрес</th></Link>
+                    <Link to="/CreateDoc" className="table__title"><th>Долг</th></Link>
+                    <Link to="/CreateDoc" className="table__title"><th>срок</th></Link>
+                    <Link to="/CreateDoc" className="table__title"><th>пр. ЕПД</th></Link>
+                    <Link to="/CreateDoc" className="table__title"><th>долг. ЕПД</th></Link>
+                    <Link to="/CreateDoc" className="table__title"><th>судебная работа</th></Link>
+                    <Link to="/CreateDoc" className="table__title"><th>соглашения</th></Link>
+                    <Link to="/CreateDoc" className="table__title"><th>коментарии</th></Link>
+                    <Link to="/CreateDoc" className="table__title"><th><Checkbox {...label} style={{ "appearance": "none" }} /></th></Link>
+                    <Link to="/CreateDoc" className="table__title"><th><StarBorderIcon /></th></Link>
                 </tr>
             </thead>
-            <Item StarBorderIcon ={<StarBorderIcon />}/>
+            <Item StarBorderIcon={<StarBorderIcon />} />
         </table>
     );
 }

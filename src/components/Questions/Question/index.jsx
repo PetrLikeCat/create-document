@@ -1,25 +1,43 @@
 import React from 'react'
 import cross from "..//..//../img/cross.svg"
-export const Question = ({ question, answer,}) => {
+export const Question = ({ id, active, question, answer, handlSetActive }) => {
   return (
     <div className="quenstion">
-
-      {/* <div className={`faq-question ${activeQuestion === 0 ? 'active' : ''}`}>
-            <h3 onClick={() => handleQuestionClick(0)}>Сколько видов договоров есть на сайте?</h3>
-            <div className="faq-answer">
-              <p>4 основных и 7  не основных</p>
-            </div>
-          </div> */}
-      <div className={`faq-question `}>
-        <h3 >{question}</h3>
-        <img src={cross} alt="cross" />
-        <div className="faq-answer">
+      <div onClick={() => handlSetActive(id)}>
+        <div className={`faq-question`}>
+          <h3>{question}</h3>
+          <img src={cross} alt="cross" />
+          
+        </div>
+        <div className={`faq-answer ${active === id ? "faq-answer active" : "faq-answer"}`}>
           <p>{answer}</p>
         </div>
       </div>
     </div>
   )
 }
+
+  // const [active, setActive] = React.useState("")\
+
+  // React.useEffect(() => {
+  //   const handle = () => {
+  //     if (active === id) {
+  //       setLocalClass("active")
+  //     }
+  //   }
+  // }, [active])
+
+  // const handlSetActive =()=>{
+  //   setActive("active")
+  // }  
+  // let classAns = "active"
+  // React.useEffect(() => {
+  //   if (active === id) {
+  //     classAns = "active"
+  //   }
+  // }, [active])
+
+
 {/* <div className="quenstion-item">
 <div className="quenstion-item__text">
 <p>{question}</p>

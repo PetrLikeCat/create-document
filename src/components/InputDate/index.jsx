@@ -13,9 +13,9 @@ export const InputDate = () => {
                 </div>
                 <button className="document-search__btn">найти</button>
                 <button className="document-search__btn">сбросить</button>
-                <Link to="/"><button className="document-search__btn">создать</button></Link>
+                <Link to="/ContractOpt"><button className="document-search__btn">создать</button></Link>
             </div>
-     
+
         </div>
     )
 }

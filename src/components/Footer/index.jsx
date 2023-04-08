@@ -6,7 +6,7 @@ import youtube from '..//../img/youtube.svg'
 export const Footer = () => {
     return (
         <footer>
-            <img src={logo} alt="logo" className="footer__logo"/>
+            <img src={logo} alt="logo" className="footer__logo" />
             <div className="footer-menu">
                 <ul className="footer-menu__list">
                     <li className="footer-menu__item"><a href="#">Бонусы</a></li>
@@ -36,9 +36,9 @@ export const Footer = () => {
                     Мы используем cookies, а так же <br /> следуем политикой обработки <br /> персональных данных
                 </span>
                 <div className='footer-connection__network'>
-                <img src={vk} alt="vk" />
-                <img src={telegram} alt="telegram" />
-                <img src={youtube} alt="youtube" />  
+                    <img src={vk} alt="vk" />
+                    <img src={telegram} alt="telegram" />
+                    <img src={youtube} alt="youtube" />
                 </div>
             </div>
         </footer>

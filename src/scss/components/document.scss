@@ -4,6 +4,7 @@
 .table {
   margin-top: 50px;
   border-collapse: collapse;
+
   &__cell {
     border: 1px solid #b9b9b9;
     border-top: none;
@@ -33,6 +34,10 @@ tr {
   grid-row-gap: 0px;
   background-color: #26ad50;
   color: #ffffff;
+  a{
+    text-decoration: none;
+    border:none;
+  }
 }
 .table__row {
   display: grid;
