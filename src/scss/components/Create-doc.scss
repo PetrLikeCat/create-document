@@ -5,6 +5,25 @@
     font-size: 16px;
     line-height: 20px;
     color: #222222;
+    white-space: nowrap;
+    height: 20px;
+    position: relative;
+  }
+  &__duty {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #26ad50;
+    height: 20px;
+    position: absolute;
+    left: 140px;
+    top: 0;
+    cursor: pointer;
+    img {
+      position: absolute;
+      left: -30px;
+      top: 0;
+    }
   }
   h1 {
     font-weight: 600;

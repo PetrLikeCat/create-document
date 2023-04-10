@@ -1,5 +1,6 @@
-footer{
-  height:241px;
+footer {
+  height: 241px;
+  margin-top: 60px;
 }
 .footer-menu {
   display: flex;
@@ -34,9 +35,9 @@ footer{
     color: #929090;
   }
 
-  &__network{
-    img{
-        margin-right: 16px;
+  &__network {
+    img {
+      margin-right: 16px;
     }
   }
 }

@@ -30,7 +30,7 @@
   .input-time {
     input {
       width: 150px;
-      height: 40px;
+      height: 42px;
       border: 1px solid #b9b9b9;
       padding-left: 7px;
     }
@@ -48,12 +48,14 @@
   }
 }
 .period-item__minus {
-  padding: 12px 20px 12px 20px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  color: #555;
-  text-align: center;
+  padding: 12px 20px 11px 20px;
   border-top: 1px solid #b9b9b9;
   border-bottom: 1px solid #b9b9b9;
+  span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+  }
 }

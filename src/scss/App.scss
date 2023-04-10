@@ -14,3 +14,14 @@
   width: 1211px;
   font-family: "Montserrat";
 }
+input:focus {
+  background-color: rgb(219, 235, 206);
+  border: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+h1{
+  margin: 0;
+}

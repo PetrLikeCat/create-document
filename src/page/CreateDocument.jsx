@@ -13,6 +13,8 @@ import { Court } from '../components/Сourt'
 import { CreateSort } from '../components/CreateSort';
 import { InputSort } from '../components/InputSort';
 import { InputPeriod } from '../components/DocumentTime/InputPeriod';
+import { PopupDuty } from '../components/PopupDuty';
+import Rectangle from "..//img/Rectangle 2.svg"
 
 
 export const CreateDocument = () => {
@@ -25,7 +27,7 @@ export const CreateDocument = () => {
 
     const [startDate, setStartDate] = React.useState('');
     const [endDate, setEndDate] = React.useState('');
-
+    const [popup, setPopup] = React.useState(false)
     const handleStartDateChange = (event) => {
         setStartDate(event.target.value);
     };
@@ -160,13 +162,14 @@ export const CreateDocument = () => {
                         "width": "240px",
                         "marginLeft": "60px"
                     }}>
-                        <p className='create__text'>Госпошлина</p>
+                        <p className='create__text'>Госпошлина <span className='create__duty' onClick={() => setPopup(true)}><img src={Rectangle} alt="span" />Рассчитать тут</span></p>
+                        <PopupDuty popup={popup} setPopup={setPopup} />
                         <InputSort placeholder={"сумма"} />
                     </div>
                 </div>
 
                 <div style={{
-                    "marginTop": "30px"
+                    "marginTop": "30px",
                 }}>
                     <div style={{
                         "width": "1064px",
