@@ -21,6 +21,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    color: #fff;
   }
 }
 
@@ -34,9 +35,10 @@ tr {
   grid-row-gap: 0px;
   background-color: #26ad50;
   color: #ffffff;
-  a{
+  a {
     text-decoration: none;
-    border:none;
+    border: none;
+    color: #fff;
   }
 }
 .table__row {
