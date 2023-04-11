@@ -129,7 +129,6 @@ export const CreateDocument = () => {
                     <div style={{
                         "width": "150px",
                         "marginLeft": "40px",
-
                     }}>
                         <p className='create__text'>Основная сумма</p>
                         <InputSort placeholder={"сумма"} />

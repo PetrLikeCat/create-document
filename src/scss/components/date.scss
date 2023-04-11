@@ -19,14 +19,14 @@
       display: flex;
     }
     .document-search__input {
-      width: 600px;
+      width: 700px;
       height: 50px;
       border-radius: 50px;
     }
     &__input {
       position: relative;
       input {
-        width: 570px;
+        width: 670px;
         height: 50px;
         border: none;
         border-radius: 50px;
@@ -62,17 +62,22 @@
 .sort {
   padding: 0;
   &-title {
-    margin-left: 8px;
+    // margin-left: 8px;
   }
 }
 .document-sort {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
   width: 200px;
 }
 :hover {
+}
+
+.sort-form__controll {
+  margin: 0;
+  width: 50px;
 }
