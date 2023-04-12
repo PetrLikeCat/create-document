@@ -10,10 +10,11 @@ import { UseService } from '../components/UseService'
 import { Сomparison } from '../components/Сomparison'
 
 export const Home = () => {
+    const [active, setActive] = React.useState(false)
     return (
         <div className="content">
-            <Header />
-            <Main />
+            <Header active={active} setActive={setActive}/>
+            <Main active={active} setActive={setActive}/>
             <UseService />
             <Market />
             <Сomparison />

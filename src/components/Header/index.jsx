@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from "..//../img/logo.png";
 import { PopupHome } from '../PopupHome';
-export const Header = () => {
+export const Header = ({active,setActive}) => {
 
-    const [active, setActive] = React.useState(false)
+    // const [active, setActive] = React.useState(false)
 
     return (
         <header>
